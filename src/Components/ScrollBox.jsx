@@ -7,7 +7,17 @@ function ScrollBox(props) {
 
   useEffect(() => {
     const divi = props.bodyWidth / 100;
-    setStyleBox( {left: props.scrollTop * divi})
+    // const ifEnd = props.bodyWidth <= (styleBox.left + 105) ? true : false;
+    let newStyle = {};
+    if( props.bodyWidth <= (styleBox.left +101) ) {
+      newStyle = {
+        
+        display: 'none'
+      }
+    } else {
+      newStyle = {left: props.scrollTop * divi < props.bodyWidth ? props.scrollTop * divi : props.bodyWidth - 106};
+    }
+    setStyleBox( newStyle)
 }, [props.scrollTop]);
   
 
