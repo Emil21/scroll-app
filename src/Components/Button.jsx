@@ -7,7 +7,7 @@ function Button(props) {
 
     useEffect(() => {
         let op = ( props.scrollTop + props.viewheight ) /  ( props.bodyHeight )  ;
-        op = props.scrollTop < 80 ? op- 0.39 : op;
+        op = props.scrollTop < 80 ? op - 0.38 : op;
         setOpacity({opacity: op});
     }, [props.scrollTop]);
 

@@ -7,7 +7,6 @@ function ScrollBox(props) {
 
   useEffect(() => {
     const divi = props.bodyWidth / 100;
-    console.log("body width", divi);
     setStyleBox( {left: props.scrollTop * divi})
 }, [props.scrollTop]);
   
