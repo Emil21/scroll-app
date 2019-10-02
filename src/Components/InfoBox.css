@@ -1,0 +1,4 @@
+.infobox{
+    display: flex;
+    flex-direction: column;
+}
