@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React from 'react';
 import Content from './Content';
 import ButtonHolder from './ButtonHolder';
 import Counter from './Counter';

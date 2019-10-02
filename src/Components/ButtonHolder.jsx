@@ -1,12 +1,8 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React from 'react';
 import Button from './Button';
 import './ButtonHolder.css';
 
 function ButtonHolder(props) {
-
-  const renderButtons = () => {
-
-  }
 
   return (
     <div className="outerDiv">

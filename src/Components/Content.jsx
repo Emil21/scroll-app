@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React from 'react';
 import data from './../Data/data';
 import './Content.css';
 
